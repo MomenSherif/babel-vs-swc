@@ -6,6 +6,15 @@
       "decorators": false,
       "dynamicImport": false
     },
-    "target": "es2015"
+    "baseUrl": "./src",
+    "paths": {
+      "@uuid": ["uuid.ts"]
+    },
+    "loose": false,
+    "target": "es2015",
+    "externalHelpers": true
+  },
+  "module": {
+    "type": "commonjs"
   }
 }

@@ -1,4 +1,4 @@
-import uuid from './uuid';
+import uuid from '@uuid';
 
 const one = {
   asd: 'asd',
@@ -18,5 +18,7 @@ const three = {
 export function sum(a: number, b: number): number {
   return a + b;
 }
+
+console.log(sum(1, 4));
 
 export { uuid };

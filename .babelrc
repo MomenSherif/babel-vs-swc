@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "modules": "auto" }],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      { "absoluteRuntime": false, "corejs": 3, "version": "^7.17.0" }
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@uuid": "./src/uuid"
+        }
+      }
+    ]
+  ]
+}
